@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Debt Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Student Debt Calculator</h1>
+    <p>Enter your loan details below and click calculate.</p>
+
+    <label for="balance">Loan Balance</label>
+    <input id="balance" type="number" placeholder="30000" />
+
+    <label for="rate">Annual Interest Rate (%)</label>
+    <input id="rate" type="number" step="0.01" placeholder="5.5" />
+
+    <label for="years">Loan Term (Years)</label>
+    <input id="years" type="number" placeholder="10" />
+
+    <label for="extra">Extra Monthly Payment</label>
+    <input id="extra" type="number" placeholder="0" />
+
+    <button id="calculateBtn" type="button">Calculate</button>
+
+    <div id="results"></div>
+  </div>
+
+  <script src="document.js"></script>
+</body>
+</html>
