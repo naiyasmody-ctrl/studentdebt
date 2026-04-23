@@ -7,9 +7,9 @@ body {
 }
 
 .container {
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
-  background-color: white;
+  background-color: #ffffff;
   padding: 35px;
   border-radius: 18px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
@@ -19,12 +19,14 @@ h1 {
   text-align: center;
   margin-bottom: 10px;
   color: #1d4ed8;
+  font-size: 48px;
 }
 
 p {
   text-align: center;
   margin-bottom: 25px;
   color: #4b5563;
+  font-size: 18px;
 }
 
 label {
@@ -32,16 +34,19 @@ label {
   margin-top: 18px;
   margin-bottom: 8px;
   font-weight: bold;
+  font-size: 18px;
+  color: #1f2937;
 }
 
 input {
   width: 100%;
-  padding: 12px;
-  font-size: 16px;
+  padding: 14px;
+  font-size: 18px;
   border: 1px solid #cbd5e1;
-  border-radius: 10px;
+  border-radius: 12px;
   box-sizing: border-box;
   background-color: #f8fafc;
+  color: #111827;
 }
 
 input:focus {
@@ -52,16 +57,16 @@ input:focus {
 
 button {
   width: 100%;
-  padding: 14px;
-  margin-top: 22px;
-  font-size: 16px;
+  padding: 16px;
+  margin-top: 24px;
+  font-size: 20px;
   font-weight: bold;
   background: linear-gradient(to right, #2563eb, #3b82f6);
   color: white;
   border: none;
-  border-radius: 10px;
+  border-radius: 12px;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s, opacity 0.2s;
   box-shadow: 0 8px 18px rgba(37, 99, 235, 0.25);
 }
 
@@ -76,20 +81,75 @@ button:active {
 
 #results {
   margin-top: 28px;
-  padding: 20px;
+  padding: 24px;
   background-color: #f8fbff;
   border-left: 5px solid #3b82f6;
-  border-radius: 12px;
+  border-radius: 14px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
 }
 
 #results h2 {
   margin-top: 0;
+  margin-bottom: 14px;
   color: #1d4ed8;
+  font-size: 28px;
 }
 
 #results p {
   text-align: left;
   margin: 10px 0;
   color: #111827;
+  font-size: 17px;
+}
+
+.awareness-box {
+  margin-top: 30px;
+  padding: 24px;
+  background: linear-gradient(to right, #eef4ff, #f8fbff);
+  border-left: 6px solid #2563eb;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.awareness-box h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #1d4ed8;
+  font-size: 28px;
+}
+
+.awareness-box p {
+  margin: 0;
+  text-align: left;
+  line-height: 1.7;
+  color: #1f2937;
+  font-size: 17px;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 20px 12px;
+  }
+
+  .container {
+    padding: 22px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  p,
+  label,
+  input,
+  button,
+  #results p,
+  .awareness-box p {
+    font-size: 16px;
+  }
+
+  #results h2,
+  .awareness-box h2 {
+    font-size: 24px;
+  }
 }
